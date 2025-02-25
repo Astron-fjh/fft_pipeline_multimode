@@ -104,12 +104,12 @@ $$
 
    蝶形单元的输入输出满足：
    
-   $$
-   \begin{align}
-   	x_{m+1}(p) = x_{m}(p) + x_{m}(q) \cdot W_N^r \\
-   	x_{m+1}(q) = x_{m}(p) - x_{m}(q) \cdot W_N^r
-   \end{align}
-   $$
+$$
+\begin{align}
+x_{m+1}(p) = x_{m}(p) + x_{m}(q) \cdot W_N^r \\
+x_{m+1}(q) = x_{m}(p) - x_{m}(q) \cdot W_N^r
+\end{align}
+$$
    
    其中， $q = p + 2^m$ ， $W_N^r = cos(\frac{2\pi r}{N}) - jsin(\frac{2\pi r}{N})$
 
@@ -589,12 +589,12 @@ The structure diagram of an 8-point FFT computation is shown below. From the dia
 
    The input-output relationships of the butterfly unit are:
 
-   $$
-   \begin{align}
-   	x_{m+1}(p) = x_{m}(p) + x_{m}(q) \cdot W_N^r \\
-   	x_{m+1}(q) = x_{m}(p) - x_{m}(q) \cdot W_N^r
-   \end{align}
-   $$
+$$
+\begin{align}
+x_{m+1}(p) = x_{m}(p) + x_{m}(q) \cdot W_N^r \\
+x_{m+1}(q) = x_{m}(p) - x_{m}(q) \cdot W_N^r
+\end{align}
+$$
 
    Where, $q = p + 2^m$, and $W_N^r = \cos\left(\frac{2\pi r}{N}\right) - j\sin\left(\frac{2\pi r}{N}\right)$.
 
