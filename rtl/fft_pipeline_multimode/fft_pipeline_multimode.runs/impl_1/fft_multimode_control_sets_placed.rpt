@@ -1,0 +1,585 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Feb 19 00:32:49 2025
+| Host         : FJH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fft_multimode_control_sets_placed.rpt
+| Design       : fft_multimode
+| Device       : xc7a200t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   519 |
+| Unused register locations in slices containing registers |    23 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      9 |            2 |
+|    16+ |          516 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              64 |           31 |
+| No           | No                    | Yes                    |              99 |           35 |
+| No           | Yes                   | No                     |             288 |          128 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |           16470 |         9557 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+--------------------------------+-----------------------------+------------------+----------------+
+|   Clock Signal  |          Enable Signal         |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------+--------------------------------+-----------------------------+------------------+----------------+
+|  clk_IBUF_BUFG  | u_fft_ctrl/m0                  | sram_2x16x512bit_init/rst_n |                3 |              4 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/fft_ctrl_wr_en      | sram_2x16x512bit_init/rst_n |                3 |              9 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/i[8]_i_1_n_0        | sram_2x16x512bit_init/rst_n |                3 |              9 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_402[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_443[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_444[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_446[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_423[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_416[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_427[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_433[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_442[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_447[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_448[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_406[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_421[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_438[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_45[0]  | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_426[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_404[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_41[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_40[0]  | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_417[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_422[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_449[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_42[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_43[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_4[0]   | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_405[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_432[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_450[0] | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_451[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_413[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_44[0]  | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_445[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_453[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_454[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_455[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_408[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_456[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_425[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_403[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_420[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_418[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_424[0] | sram_2x16x512bit_init/rst_n |               29 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_409[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_428[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_434[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_452[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_401[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_400[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_410[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_412[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_430[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_411[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_407[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_414[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_435[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_437[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_415[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_436[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_439[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_419[0] | sram_2x16x512bit_init/rst_n |               26 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_429[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_440[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_47[0]  | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_441[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_431[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_511[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_464[0] | sram_2x16x512bit_init/rst_n |               31 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_52[0]  | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_480[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_496[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_507[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_487[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_462[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_53[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_503[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_504[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_467[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_498[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_486[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_458[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_483[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_488[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_49[0]  | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_479[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_492[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_494[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_485[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_461[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_495[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_471[0] | sram_2x16x512bit_init/rst_n |               26 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_490[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_491[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_5[0]   | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_459[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_460[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_476[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_472[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_473[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_484[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_466[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_493[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_457[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_481[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_482[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_468[0] | sram_2x16x512bit_init/rst_n |                9 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_463[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_475[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_489[0] | sram_2x16x512bit_init/rst_n |               10 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_497[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_499[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_470[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_50[0]  | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_500[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_501[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_46[0]  | sram_2x16x512bit_init/rst_n |               31 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_502[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_465[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_505[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_474[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_508[0] | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_478[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_469[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_48[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_509[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_51[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_477[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_332[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_510[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_506[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_90[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_6[0]   | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_7[0]   | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_96[0]  | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_83[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_55[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_61[0]  | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_85[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_91[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_58[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_60[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_78[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_73[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_66[0]  | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_69[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_79[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_87[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_9[0]   | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_92[0]  | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_74[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_65[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_59[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_75[0]  | sram_2x16x512bit_init/rst_n |               31 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_93[0]  | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_94[0]  | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_98[0]  | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_72[0]  | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_86[0]  | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_89[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_57[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_56[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_63[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_8[0]   | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_81[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_68[0]  | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_84[0]  | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_97[0]  | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_67[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_54[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_62[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_77[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_88[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_95[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_76[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_64[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_70[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_80[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_71[0]  | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_99[0]  | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_82[0]  | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_387[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_397[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_398[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_345[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_388[0] | sram_2x16x512bit_init/rst_n |                8 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_381[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_39[0]  | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_399[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_364[0] | sram_2x16x512bit_init/rst_n |               31 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_384[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_343[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_372[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_376[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_360[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_348[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_36[0]  | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_354[0] | sram_2x16x512bit_init/rst_n |               31 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_344[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_355[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_359[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_370[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_38[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_365[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_371[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_380[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_369[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_353[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_382[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_349[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_383[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_341[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_352[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_351[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_385[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_374[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_386[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_347[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_346[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_358[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_362[0] | sram_2x16x512bit_init/rst_n |               26 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_357[0] | sram_2x16x512bit_init/rst_n |               29 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_342[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_37[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_375[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_391[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_379[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_377[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_394[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_367[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_35[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_363[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_356[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_350[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_366[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_373[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_378[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_389[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_393[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_395[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_390[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_392[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_361[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_396[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_368[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_140[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_142[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_143[0] | sram_2x16x512bit_init/rst_n |               29 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_1[0]   | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_112[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_132[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_144[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_107[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_115[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_146[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_145[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_131[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_120[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_105[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_102[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_119[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_126[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_133[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_130[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_108[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_109[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_123[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_14[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_103[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_104[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_113[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_114[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_111[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_124[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_10[0]  | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_125[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_129[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_13[0]  | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_147[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_101[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_110[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_138[0] | sram_2x16x512bit_init/rst_n |               29 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_12[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_141[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_148[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_149[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_0[0]   | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_116[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_122[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_100[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_106[0] | sram_2x16x512bit_init/rst_n |               27 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_128[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_11[0]  | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_121[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_118[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_117[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_127[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_134[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_136[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_135[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_139[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_137[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_184[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_152[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_19[0]  | sram_2x16x512bit_init/rst_n |               29 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_192[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_188[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_164[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_172[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_195[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_150[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_158[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_173[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_155[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_187[0] | sram_2x16x512bit_init/rst_n |               31 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_17[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_182[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_183[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_194[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_197[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_199[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_176[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_16[0]  | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_20[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_15[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_189[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_190[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_196[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_201[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_202[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_166[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_18[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_162[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_170[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_2[0]   | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_203[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_154[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_171[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_204[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_169[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_200[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_156[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_161[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_186[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_177[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_193[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_198[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_174[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_181[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_205[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_191[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_151[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_167[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_153[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_168[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_160[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_175[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_179[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_157[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_180[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_206[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_185[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_165[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_163[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_159[0] | sram_2x16x512bit_init/rst_n |               10 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_178[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_252[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_241[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_260[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_262[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_236[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_211[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_220[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_245[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_221[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_253[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_26[0]  | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_263[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_238[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_264[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_229[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_235[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_207[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_209[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_23[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_223[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_234[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_24[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_249[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_228[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_248[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_25[0]  | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_219[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_261[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_215[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_22[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_218[0] | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_227[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_217[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_239[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_225[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_210[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_212[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_243[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_233[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_214[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_242[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_208[0] | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_231[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_237[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_240[0] | sram_2x16x512bit_init/rst_n |               22 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_247[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_251[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_254[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_230[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_222[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_250[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_224[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_216[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_213[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_255[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_21[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_256[0] | sram_2x16x512bit_init/rst_n |               27 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_257[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_258[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_259[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_226[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_232[0] | sram_2x16x512bit_init/rst_n |                9 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_244[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_246[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_307[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_308[0] | sram_2x16x512bit_init/rst_n |               11 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_309[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_314[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_28[0]  | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_277[0] | sram_2x16x512bit_init/rst_n |               27 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_315[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_316[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_265[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_287[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_290[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_299[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_276[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_283[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_301[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_304[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_296[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_292[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_27[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_267[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_285[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_293[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_3[0]   | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_282[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_31[0]  | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_311[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_310[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_278[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_280[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_295[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_294[0] | sram_2x16x512bit_init/rst_n |               23 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_312[0] | sram_2x16x512bit_init/rst_n |               29 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_313[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_318[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_269[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_300[0] | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_319[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_317[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_32[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_297[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_302[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_270[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_29[0]  | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_320[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_321[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_291[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_274[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_289[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_305[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_266[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_273[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_268[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_279[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_272[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_298[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_284[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_30[0]  | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_303[0] | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_306[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_286[0] | sram_2x16x512bit_init/rst_n |               12 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_288[0] | sram_2x16x512bit_init/rst_n |               15 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_281[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_271[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_275[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_334[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_330[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_322[0] | sram_2x16x512bit_init/rst_n |               28 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_337[0] | sram_2x16x512bit_init/rst_n |               30 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_324[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_328[0] | sram_2x16x512bit_init/rst_n |               25 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_325[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_33[0]  | sram_2x16x512bit_init/rst_n |               13 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_336[0] | sram_2x16x512bit_init/rst_n |               19 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_338[0] | sram_2x16x512bit_init/rst_n |               20 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_339[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_34[0]  | sram_2x16x512bit_init/rst_n |               32 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_340[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_335[0] | sram_2x16x512bit_init/rst_n |               14 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_333[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_326[0] | sram_2x16x512bit_init/rst_n |               16 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_329[0] | sram_2x16x512bit_init/rst_n |               21 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_331[0] | sram_2x16x512bit_init/rst_n |               17 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_327[0] | sram_2x16x512bit_init/rst_n |               24 |             32 |
+|  clk_IBUF_BUFG  | u_fft_ctrl/cnt_mod2_reg_323[0] | sram_2x16x512bit_init/rst_n |               18 |             32 |
+|  clk_IBUF_BUFG  | fft_start_BUFG                 | sram_2x16x512bit_init/rst_n |               25 |             64 |
+|  rd_en_BUFG     |                                |                             |               31 |             64 |
+|  clk_IBUF_BUFG  |                                | sram_2x16x512bit_init/rst_n |               35 |             99 |
+|  fft_start_BUFG |                                | sram_2x16x512bit_init/rst_n |              128 |            288 |
++-----------------+--------------------------------+-----------------------------+------------------+----------------+
+
+

@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../fft_pipeline_multimode.srcs/sources_1/new/butterfly.v" \
+"../../../../fft_pipeline_multimode.srcs/sources_1/new/fft_ctrl.v" \
+"../../../../fft_pipeline_multimode.srcs/sources_1/new/fft_multimode.v" \
+"../../../../fft_pipeline_multimode.srcs/sources_1/new/in_resort.v" \
+"../../../../fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v" \
+"../../../../fft_pipeline_multimode.srcs/sim_1/new/tb_fft_multimode.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

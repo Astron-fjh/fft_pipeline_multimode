@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-3" LaunchTime="1739896141">
+  <File Type="BITSTR-BMM" Name="fft_multimode_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fft_multimode_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="fft_multimode_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="fft_multimode_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fft_multimode.tcl"/>
+  <File Type="OPT-TIMING" Name="fft_multimode_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fft_multimode_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="fft_multimode_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fft_multimode_reports.tcl"/>
+  <File Type="OPT-DRC" Name="fft_multimode_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fft_multimode.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fft_multimode_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="fft_multimode_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="fft_multimode_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="fft_multimode_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fft_multimode_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fft_multimode_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fft_multimode_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fft_multimode_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fft_multimode_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fft_multimode_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fft_multimode_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="fft_multimode.bgn"/>
+  <File Type="PLACE-TIMING" Name="fft_multimode_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fft_multimode_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fft_multimode.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fft_multimode_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fft_multimode_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fft_multimode_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="fft_multimode.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="fft_multimode_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fft_multimode_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fft_multimode_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fft_multimode_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fft_multimode_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fft_multimode_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fft_multimode.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="fft_multimode_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="fft_multimode.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fft_multimode_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fft_multimode_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="fft_multimode.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fft_multimode_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="fft_multimode_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fft_multimode_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fft_multimode_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fft_multimode_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fft_multimode_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fft_multimode_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="fft_multimode_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fft_multimode_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fft_multimode_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fft_multimode_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fft_multimode_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fft_multimode_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fft_multimode_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fft_multimode_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fft_multimode_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fft_multimode_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fft_multimode_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fft_multimode_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="fft_multimode.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fft_multimode_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="fft_multimode.rbt"/>
+  <File Type="BITSTR-NKY" Name="fft_multimode.nky"/>
+  <File Type="BG-DRC" Name="fft_multimode.drc"/>
+  <File Type="RDI-RDI" Name="fft_multimode.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/butterfly.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fft_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/in_resort.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sram_2x16x512bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fft_multimode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/wn_re_512_fixed16.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/wn_im_512_fixed16.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fft_multimode"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
+</GenRun>

@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sim_1/new/tb_fft_multimode.v,1739894669,verilog,,,,tb_fft_multimode,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1739820584,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v,,blk_mem_gen_0,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1739820670,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v,1739824336,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_ctrl.v,,butterfly,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_ctrl.v,1739885915,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_multimode.v,,fft_ctrl,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_multimode.v,1739888446,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/in_resort.v,,fft_multimode,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/in_resort.v,1739885006,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v,,in_resort,,,,,,,,
+E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v,1739887371,verilog,,E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sim_1/new/tb_fft_multimode.v,,sram_2x16x512bit,,,,,,,,

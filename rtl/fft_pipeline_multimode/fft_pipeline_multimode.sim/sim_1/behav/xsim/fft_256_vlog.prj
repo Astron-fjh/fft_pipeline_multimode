@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../fft_pipeline_256.srcs/sources_1/ip/blk_mem_gen_3/sim/blk_mem_gen_3.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/new/butterfly.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/new/counter.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/new/in_resort.v" \
+"../../../../fft_pipeline_256.srcs/sources_1/new/sram_2x16x512bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

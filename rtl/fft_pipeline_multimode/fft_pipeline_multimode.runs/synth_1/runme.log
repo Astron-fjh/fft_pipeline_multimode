@@ -1,0 +1,630 @@
+
+*** Running vivado
+    with args -log fft_multimode.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft_multimode.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fft_multimode.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 348.793 ; gain = 104.289
+Command: synth_design -top fft_multimode -part xc7a200tfbg484-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 495.000 ; gain = 100.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fft_multimode' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_multimode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sram_2x16x512bit' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sram_2x16x512bit' (1#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.runs/synth_1/.Xil/Vivado-23676-FJH/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (2#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.runs/synth_1/.Xil/Vivado-23676-FJH/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.runs/synth_1/.Xil/Vivado-23676-FJH/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (3#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.runs/synth_1/.Xil/Vivado-23676-FJH/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'in_resort' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/in_resort.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'in_resort' (4#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/in_resort.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fft_ctrl' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'butterfly' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly' (5#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fft_ctrl' (6#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fft_multimode' (7#1) [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/fft_multimode.v:23]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port inv
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[9]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[8]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[7]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[6]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[5]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[4]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[3]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[2]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[1]
+WARNING: [Synth 8-3331] design fft_ctrl has unconnected port N[0]
+WARNING: [Synth 8-3331] design fft_multimode has unconnected port stb
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 670.023 ; gain = 275.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 670.023 ; gain = 275.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 670.023 ; gain = 275.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_w_re_ram'
+Finished Parsing XDC File [e:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_w_re_ram'
+Parsing XDC File [e:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'u_w_im_ram'
+Finished Parsing XDC File [e:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'u_w_im_ram'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1074.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1074.668 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1074.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.004 ; gain = 680.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.004 ; gain = 680.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_w_re_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_w_im_ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.004 ; gain = 680.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "re_sram_reg[511]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[510]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[509]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[508]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[507]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[506]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[505]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[504]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[503]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[502]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[501]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[500]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[499]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[498]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[497]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[496]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[495]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[494]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[493]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[492]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[491]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[490]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[489]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[488]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[487]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[486]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[485]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[484]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[483]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[482]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[481]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[480]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[479]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[478]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[477]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[476]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[475]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[474]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[473]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[472]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[471]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[470]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[469]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[468]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[467]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[466]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[465]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[464]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[463]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[462]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[461]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[460]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[459]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[458]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[457]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[456]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[455]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[454]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[453]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[452]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[451]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[450]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[449]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[448]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[447]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[446]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[445]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[444]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[443]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[442]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[441]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[440]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[439]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[438]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[437]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[436]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[435]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[434]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[433]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[432]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[431]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[430]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[429]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[428]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[427]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[426]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[425]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[424]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[423]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[422]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[421]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[420]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[419]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[418]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[417]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[416]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[415]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[414]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[413]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "re_sram_reg[412]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'xm1_re_out_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'xm1_im_out_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'xm2_re_out_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'xm2_im_out_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/sram_2x16x512bit.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'y1_re_r_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'y1_im_r_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'y2_re_r_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'y2_im_r_reg' [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1075.004 ; gain = 680.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sram_2x16x512bit__GB0 |           1|     33360|
+|2     |sram_2x16x512bit__GB1 |           1|     12112|
+|3     |sram_2x16x512bit__GB2 |           1|     15104|
+|4     |sram_2x16x512bit__GB3 |           1|     19086|
+|5     |sram_2x16x512bit__GB4 |           1|     24146|
+|6     |sram_2x16x512bit__GB5 |           1|     30616|
+|7     |fft_multimode__GC0    |           1|      3407|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   4 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1032  
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1033  
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 6     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1029  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fft_multimode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module sram_2x16x512bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1024  
+	   2 Input      1 Bit        Muxes := 1024  
+Module in_resort 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module butterfly 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module fft_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP u_butterfly/y1_re_r3, operation Mode is: A*B.
+DSP Report: operator u_butterfly/y1_re_r3 is absorbed into DSP u_butterfly/y1_re_r3.
+DSP Report: Generating DSP u_butterfly/y1_re_r2, operation Mode is: A*B.
+DSP Report: operator u_butterfly/y1_re_r2 is absorbed into DSP u_butterfly/y1_re_r2.
+DSP Report: Generating DSP u_butterfly/y1_im_r3, operation Mode is: A*B.
+DSP Report: operator u_butterfly/y1_im_r3 is absorbed into DSP u_butterfly/y1_im_r3.
+DSP Report: Generating DSP u_butterfly/y1_im_r2, operation Mode is: A*B.
+DSP Report: operator u_butterfly/y1_im_r2 is absorbed into DSP u_butterfly/y1_im_r2.
+WARNING: [Synth 8-3331] design fft_multimode has unconnected port stb
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1075.004 ; gain = 680.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|butterfly   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|butterfly   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:64]
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sram_2x16x512bit__GB0 |           1|     33029|
+|2     |sram_2x16x512bit__GB1 |           1|      4552|
+|3     |sram_2x16x512bit__GB2 |           1|      5697|
+|4     |sram_2x16x512bit__GB3 |           1|      7290|
+|5     |sram_2x16x512bit__GB4 |           1|      8993|
+|6     |sram_2x16x512bit__GB5 |           1|     10927|
+|7     |fft_multimode__GC0    |           1|      1954|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:01:18 . Memory (MB): peak = 1089.352 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:01:18 . Memory (MB): peak = 1102.629 ; gain = 707.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sram_2x16x512bit__GB0 |           1|     33029|
+|2     |sram_2x16x512bit__GB1 |           1|      4552|
+|3     |sram_2x16x512bit__GB2 |           1|      5697|
+|4     |sram_2x16x512bit__GB3 |           1|      7290|
+|5     |sram_2x16x512bit__GB4 |           1|      8993|
+|6     |sram_2x16x512bit__GB5 |           1|     10927|
+|7     |fft_multimode__GC0    |           1|      1954|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:64]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1116.645 ; gain = 721.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sram_2x16x512bit__GB0 |           1|     15466|
+|2     |sram_2x16x512bit__GB1 |           1|      4429|
+|3     |sram_2x16x512bit__GB2 |           1|      5528|
+|4     |sram_2x16x512bit__GB3 |           1|      6970|
+|5     |sram_2x16x512bit__GB4 |           1|      8235|
+|6     |sram_2x16x512bit__GB5 |           1|      9278|
+|7     |fft_multimode__GC0    |           1|       847|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.srcs/sources_1/new/butterfly.v:64]
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin addra[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_re_ram has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin addra[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_w_im_ram has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:01:32 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:01:33 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:01:35 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:01:35 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:01:41 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:01:41 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |BUFG          |     3|
+|4     |CARRY4        |    46|
+|5     |DSP48E1       |     4|
+|6     |LUT1          |    34|
+|7     |LUT2          |   322|
+|8     |LUT3          |  8438|
+|9     |LUT4          |   733|
+|10    |LUT5          |   303|
+|11    |LUT6          | 18154|
+|12    |MUXF7         |  4352|
+|13    |MUXF8         |  2048|
+|14    |FDCE          | 16566|
+|15    |FDPE          |     3|
+|16    |LD            |    64|
+|17    |LDC           |   288|
+|18    |IBUF          |    38|
+|19    |OBUF          |    34|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------------------+-----------------+------+
+|      |Instance                |Module           |Cells |
++------+------------------------+-----------------+------+
+|1     |top                     |                 | 51462|
+|2     |  sram_2x16x512bit_init |sram_2x16x512bit | 31684|
+|3     |  u_fft_ctrl            |fft_ctrl         | 19455|
+|4     |    u_butterfly         |butterfly        | 17132|
+|5     |  u_in_resort           |in_resort        |   169|
++------+------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:01:41 . Memory (MB): peak = 1141.910 ; gain = 747.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 48 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:34 . Memory (MB): peak = 1141.910 ; gain = 342.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:01:42 . Memory (MB): peak = 1141.910 ; gain = 747.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6802 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1176.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 352 instances were transformed.
+  LD => LDCE: 64 instances
+  LDC => LDCE: 288 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+141 Infos, 21 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:01:50 . Memory (MB): peak = 1176.895 ; gain = 793.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1176.895 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/fft_pipeline_multimode/fft_pipeline_multimode.runs/synth_1/fft_multimode.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1176.895 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file fft_multimode_utilization_synth.rpt -pb fft_multimode_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 00:31:24 2025...
